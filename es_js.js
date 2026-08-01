@@ -69,30 +69,114 @@
 
 // console.log(Math.max(...nums))
 
-function sum (...numbers){
-    let total = 0 
-    for(const num of numbers){
-        total +=num
-    }
-    return total
-}
-console.log(sum(10,20,30))
+// function sum (...numbers){
+//     let total = 0 
+//     for(const num of numbers){
+//         total +=num
+//     }
+//     return total
+// }
+// // console.log(sum(10,20,30))
+
+// // 
+
+// function person(name,...skills){
+
+// // console.log(name);
+
+// // console.log(skills);
+
+// }
+
+// person("Rahim","JS","React","Node");
+
+// // array destructure
+
+// const nums = [1,20,30,40,5,0]
+// let maxNumber =Math.max(...nums)
+// let minNumber = Math.min(...nums)
+// // console.log(maxNumber,minNumber)
+
+// const car = {
+//     band:"toyta",
+//     showBand(){
+//         console.log(this.band)
+//     }
+// }
+// // car.showBand()
+
+// const student = {
+//     name: "ekhlas",
+    
+// }
+// console.log(student.name)
+
+// const person1 = {
+//   name: "Rahim",
+
+//   say() {
+//     console.log(this.name);
+//   }
+// };
+
+// const person2 = {
+//   name: "Karim",
+
+//   say() {
+//     console.log(this.name);
+//   }
+// };
+
+const person1 = {
+  name: "Rahim",
+
+  say() {
+    console.log(this.name)
+  }
+};
+
+const person2 = {
+  name: "Karim",
+
+  say() {
+    console.log(this.name)
+  }
+};
+
+// person1.say();
+// person2.say();
+
 
 // 
 
-function person(name,...skills){
+const person = {
+  name: "Rahim",
 
-console.log(name);
+  greet() {
+    return this.name;
+  }
+};
 
-console.log(skills);
+const admin = {
+  name: "Karim"
+};
 
-}
+admin.greet = person.greet;
 
-person("Rahim","JS","React","Node");
+console.log(admin.greet());
 
-// array destructure
+const user = {
+  name: "Aklas",
 
-const nums = [1,20,30,40,5,0]
-const [firs,...others]= nums
-console.log(firs)
-console.log(others)
+  show() {
+    console.log(this.name);
+
+    function inner() {
+      console.log(this.name);
+    }
+
+    inner();
+  }
+};
+
+user.show();
