@@ -70,7 +70,7 @@
 // console.log(Math.max(...nums))
 
 // function sum (...numbers){
-//     let total = 0 
+//     let total = 0
 //     for(const num of numbers){
 //         total +=num
 //     }
@@ -78,7 +78,7 @@
 // }
 // // console.log(sum(10,20,30))
 
-// // 
+// //
 
 // function person(name,...skills){
 
@@ -107,7 +107,7 @@
 
 // const student = {
 //     name: "ekhlas",
-    
+
 // }
 // console.log(student.name)
 
@@ -127,56 +127,27 @@
 //   }
 // };
 
-const person1 = {
-  name: "Rahim",
-
-  say() {
-    console.log(this.name)
-  }
-};
-
-const person2 = {
-  name: "Karim",
-
-  say() {
-    console.log(this.name)
-  }
-};
-
-// person1.say();
-// person2.say();
-
-
 // 
 
-const person = {
-  name: "Rahim",
+// person.show();
 
-  greet() {
-    return this.name;
-  }
+// const person = {
+//   name: "Rahim",
+//   address: {
+//     city: "Dhaka",
+//     zip: 1207,
+//   },
+// };
+// const {
+//   address: { city },
+// } = person;
+// console.log(city);
+
+const person1 = {
+    name: "Rahim",
+    age: 20,
+    country: "Bangladesh"
 };
-
-const admin = {
-  name: "Karim"
-};
-
-admin.greet = person.greet;
-
-console.log(admin.greet());
-
-const user = {
-  name: "Aklas",
-
-  show() {
-    console.log(this.name);
-
-    function inner() {
-      console.log(this.name);
-    }
-
-    inner();
-  }
-};
-
-user.show();
+const {name , ...other} = person1
+console.log(name)
+console.log(other)
