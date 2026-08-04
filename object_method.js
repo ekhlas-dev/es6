@@ -25,6 +25,10 @@ delete bankAccount.balance
 bankAccount.balance = 8000
 
 
+let [a, b] = [1, 2];
+console.log(a,b)
+
+
 // const user =[1,5,5,87,84,42,41,58,12,15]
 // const key = Object.keys(user)
 // const value = Object.values(user)
