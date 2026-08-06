@@ -1,40 +1,32 @@
-const numbers = [10, 20, 30];
+//
 
-const result = numbers.reduce((acc, current) => {
-  console.log("acc =", acc);
-  console.log("current =", current);
-  return acc + current;
-}, 0);
+// const numbers = [10, 20, 30, 40, 50];
+// const totalSum = numbers.reduce((sum, num) => sum + num);
+// console.log(totalSum)
 
-// console.log(result)
-const arr = [1, 2, 3];
-const results = arr.reduce((acc, current) => {});
-// console.log(results)
+// const numbers = [2, 3, 4, 5];
+// const numMultiply = numbers.reduce((mul, num) => mul * num);
+// console.log(numMultiply)
 
-const num = [100, 50, 5, 30, 80, 20];
-const minNum = num.reduce((a, b) => {
-  return a < b ? a : b;
-});
-// console.log(minNum)
+// const numbers = [12, 45, 7, 89, 21];
+// const maxNum = numbers.reduce((largeNum, current) => {
+//   return current > largeNum ? current : largeNum;
+// });
+// console.log(maxNum);
 
-const users = [
-  { name: "Aklas", age: 26 },
-  { name: "Rahim", age: 30 },
-  { name: "Karim", age: 22 },
-];
+// const numbers = [12, 45, 7, 89, 21];
+// const minNumber = numbers.reduce((minNumber, current)=>{
+//     return current < minNumber ? current : minNumber
+// })
+// console.log(minNumber)
 
-const maxAge = users.reduce((largeAge, currentAge) => {
-  return largeAge.age > currentAge.age ? largeAge : currentAge;
-});
-console.log(maxAge);
+// const words = ["apple", "banana", "cat"];
+// const totalWordCount = words.reduce((count,word)=>{
+// return count + word.length
+// },0)
+// console.log(totalWordCount)
 
-const cart = [
-  { name: "Phone", price: 30000 },
-  { name: "Headphone", price: 2000 },
-  { name: "Charger", price: 1500 }
-];
+const numbers = [2, 7, 10, 15, 18, 21];
 
-const cartPriceSum = cart.reduce((sum, current)=>{
-    return sum + current.price ;
-},0)
-console.log(cartPriceSum)
+const countEvenNumber = numbers.filter((num) => num % 2 !== 0);
+console.log(countEvenNumber)
