@@ -62,17 +62,95 @@
 // console.log(calculateShiping(500))
 // console.log(calculateShiping(500,1000))
 
-const gradeCount = (mark) => {
-  return typeof mark !== "number"
-    ? "invalid"
-    : mark >= 90
-      ? "A+"
-      : mark >= 80
-        ? "A"
-        : mark >= 70
-          ? "B"
-          : "fail";
-};
-console.log(gradeCount(95));
-console.log(gradeCount(86));
-console.log(gradeCount("ekhlas"));
+// const gradeCount = (mark) => {
+//   return typeof mark !== "number"
+//     ? "invalid"
+//     : mark >= 90
+//       ? "A+"
+//       : mark >= 80
+//         ? "A"
+//         : mark >= 70
+//           ? "B"
+//           : "fail";
+// };
+// console.log(gradeCount(95));
+// console.log(gradeCount(86));
+// console.log(gradeCount("ekhlas"));
+
+// const responceExtructor = (obj) => {
+//   const {
+//     user: { name, age },
+//   } = obj;
+//   return {name,age};
+// };
+// console.log(responceExtructor({ user: { name: "ekhlas", age: 26 } }));
+
+// let a =10;
+// let b = 20;
+// [b,a] = [a,b]
+// console.log(a)
+
+// const mostExpensiveProduct = (product) => {
+//   const keys = Object.keys(product);
+//   let heightProduct = 0;
+//   let expensiveProduct = "";
+//   for (let key of keys) {
+//     if (heightProduct < product[key]) {
+//       heightProduct = product[key];
+//       expensiveProduct = key;
+//     }
+//   }
+//   return `${expensiveProduct} : ${heightProduct}`;
+// };
+// console.log(
+//   mostExpensiveProduct({
+//     pen: 20,
+//     book: 200,
+//     bag: 500,
+//     bat: 750,
+//     latop: 50000,
+//   }),
+// );
+
+// const person = {
+//   name: "Aklas",
+//   age: 26,
+//   country: "Bangladesh",
+// };
+
+// console.log(Object.entries(person))
+// for (let [key,value] of Object.entries(person) ){
+//   console.log(key,value)
+// }
+
+// console.log(Object.entries(person))
+
+// const persons = {
+//   name: "Aklas",
+//   age: 26,
+// };
+// for(let per of Object.entries(persons)){
+//   console.log(per)
+// }
+// console.log(typeof persons)
+
+// const products = {
+//   pen: 20,
+//   book: 100,
+//   bag: 500,
+//   mouse: 700,
+// };
+// const result = Object.entries(products).filter(([key, value]) => value > 50);
+// console.log(result);
+
+// // const result = Object.entries(products).filter(
+// //   ([key, value]) => value > 50
+// // );
+
+// // console.log(result);
+// const arr = [10, 20, 30];
+
+// const [a, c] = arr;
+
+// console.log(a);
+// console.log(c);
