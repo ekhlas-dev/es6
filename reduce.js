@@ -41,16 +41,38 @@
 // }
 // console.log(calculateDiscountTotal(10, 100, 200, 50, 300))
 
-function productDiscount (discount, ...prices){
-    const total = prices.reduce((accumulator,currentVaule)=>accumulator+currentVaule,0)
-    const discountAmount = (discount * total) /100
-    const totalAfterDiscount = total - discountAmount
-    return totalAfterDiscount
-}
-console.log(productDiscount(10,100,200,50,300))
+// function productDiscount (discount, ...prices){
+//     const total = prices.reduce((accumulator,currentVaule)=>accumulator+currentVaule,0)
+//     const discountAmount = (discount * total) /100
+//     const totalAfterDiscount = total - discountAmount
+//     return totalAfterDiscount
+// }
+// console.log(productDiscount(10,100,200,50,300))
 
-let arr1 = [1,2,3,4,5,7,8,9]
-let arr2 = [2,3,5,6,7,88,9,1]
-let margeArray = [...arr1,...arr2]
-console.log(margeArray)
-let newArray = [...new Set(margeArray)]
+// let arr1 = [1,2,3,4,5,7,8,9]
+// let arr2 = [2,3,5,6,7,88,9,1]
+// let margeArray = [...arr1,...arr2]
+// console.log(margeArray)
+// let newArray = [...new Set(margeArray)]
+
+// const calculateShiping = (orderAmount, ShippingFees = 60)=>{
+//     return orderAmount >= 1000 ? "free shiping" : `shipping fee : ${ShippingFees}`
+// }
+// console.log(calculateShiping(1200))
+// console.log(calculateShiping(500))
+// console.log(calculateShiping(500,1000))
+
+const gradeCount = (mark) => {
+  return typeof mark !== "number"
+    ? "invalid"
+    : mark >= 90
+      ? "A+"
+      : mark >= 80
+        ? "A"
+        : mark >= 70
+          ? "B"
+          : "fail";
+};
+console.log(gradeCount(95));
+console.log(gradeCount(86));
+console.log(gradeCount("ekhlas"));
