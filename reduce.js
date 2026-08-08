@@ -154,3 +154,51 @@
 
 // console.log(a);
 // console.log(c);
+
+// const mostExpensiveProduct = (products) => {
+//   const result = Object.entries(products).reduce((max,current) => {
+//     return current[0].length > max[0].length ? current:max
+//   });
+//   return result[0]
+// };
+// const mostExpensiveProduct = (product) =>{
+//   const result = Object.entries(product).reduce((max, current)=>{
+//     return current [1] > max[1] ? current:max
+//   })
+//   return result[1]
+// }
+
+const mostExpensiveProduct =(product)=>{
+  const result = Object.entries(product).reduce((maxNumber, currentVlue)=>{
+    return currentVlue[1] > maxNumber [1] ? currentVlue :maxNumber
+  })
+  return result[1]
+}
+
+// const mostExpensiveProduct = (products)=>{
+//   return Object.entries(products).reduce(
+//     ([maxValue,maxNumber],[currentValue,currentNumber])=>
+//       currentNumber >maxNumber ?
+//     [currentValue,currentNumber]:[maxValue,maxNumber]
+//   )
+// }
+
+// const mostExpensiveProduct = (products) => {
+//   return Object.entries(products).reduce(
+//     ([maxNmae, maxPrice], [currentNmae, currentPrice]) =>
+//       currentPrice > maxPrice
+//         ? [currentNmae, currentPrice]
+//         : [maxNmae, maxPrice],
+//   );
+// };
+// console.log(result)
+
+console.log(
+  mostExpensiveProduct({
+    pen: 20,
+    book: 200,
+    bag: 500,
+    bat: 750,
+    latop: 50000,
+  }),
+);
