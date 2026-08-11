@@ -31,8 +31,7 @@ const getLowestPrice = (prices)=>{
 // problem 4 swapValues
 
 const swapValues =(a,b)=>{
-   return [a,b] =[b,a]
-}
+
 // console.log(swapValues(10,5))
 
 // problem 5 getEmployeeDept
