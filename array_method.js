@@ -91,3 +91,63 @@ const numbers = [1,10,2,25,3]
 // console.log(sortDescending(numbers))
 // console.log(numbers)
 
+let a = [1, 2, 3];
+let b = a;
+
+b.push(4);
+
+// console.log(a);
+// console.log(b);
+
+const user1 = {
+  name: "Aklas",
+  age: 26
+};
+
+const user2 = user1;
+
+user2.name = "Rahim";
+
+// console.log(user1);
+// console.log(user2);
+
+const person1 = {
+  name: "Aklas"
+};
+
+const person2 = {
+  name: "Aklas"
+};
+
+// console.log(person1 === person2);
+
+const arr1 = [10, 20, 30];
+const arr2 = arr1;
+
+arr2 = [100, 200, 300];
+
+// console.log(arr1);
+// console.log(arr2);
+
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1];
+
+arr2.push(4);
+
+// console.log(arr1);
+// console.log(arr2);
+
+const user1 = {
+  name: "Aklas",
+  address: {
+    city: "Sirajganj"
+  }
+};
+
+const user2 = { ...user1 };
+
+user2.name = "Rahim";
+user2.address.city = "Dhaka";
+
+console.log(user1);
+console.log(user2);
