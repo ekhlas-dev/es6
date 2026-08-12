@@ -14,10 +14,6 @@ function studentIntroduction(student) {
   return `My name is ${student.name}. I am ${student.age} years old. I am learning ${student.course}.`;
 }
 
-// console.log(studentIntroduction("student"));
-
-// My name is Rafi. I am 18 years old. I am learning JavaScript.
-
 // Problem 2 — Active User Filter
 
 function filterActiveUsers(users) {
@@ -34,9 +30,6 @@ function filterActiveUsers(users) {
   return users.filter((user) => user.isActive === true);
 }
 
-// console.log(filterActiveUsers("users"));
-
-// [{name:"A", isActive:true}]
 
 // Problem 3 —Trending Hashtag Counter
 
@@ -68,7 +61,6 @@ function countHashtags(caption) {
   };
 }
 
-// console.log(countHashtags(["#fun"]));
 
 // Problem 4 — Bonus Score Calculator
 
@@ -113,18 +105,3 @@ const generateLeaderboard = (students) => {
 
   return names.slice(0, 3);
 };
-// console.log(
-//   generateLeaderboard([
-//     { name: "Rafi", score: 90 },
-//     { name: "Sadia", score: 65 },
-//     { name: "Karim", score: 85 },
-//     { name: "Nafis", score: 75 },
-//   ]),
-// );
-console.log(generateLeaderboard([{name:"A",score:70},{name:"B",score:71}]))
-console.log(generateLeaderboard([]))
-console.log(generateLeaderboard("student"))
-console.log(generateLeaderboard([{name:"Rafi"}]))
-console.log(generateLeaderboard([{name:"Rafi",score:"90"}]
-))
-// console.log(generateLeaderboard())
